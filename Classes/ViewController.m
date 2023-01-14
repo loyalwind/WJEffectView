@@ -16,25 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)colorEffectClick:(id)sender {
+    // 传self.imageView, self.view 覆盖范围不一样
+    [WJEffectView addEffectViewToView:self.imageView tintColor:[UIColor colorWithWhite:0.11 alpha:0.73]];
+}
+
 - (IBAction)grayEffectClick:(id)sender {
-//    [WJEffectView addGrayEffectViewToView:self.view];
-    [WJEffectView addEffectViewToView:self.view tintColor:[UIColor colorWithWhite:0.11 alpha:0.73]];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.imageView.hidden = YES;
-//    });
+    // 传self.imageView, self.view 覆盖范围不一样
+    [WJEffectView addGrayEffectViewToView:self.imageView];
 }
 
 - (IBAction)blurEffectClick:(id)sender {
-//    [WJEffectView addBlurEffectFilterToView:self.view radius:3];
-    [WJEffectView addBlurImageViewToView:self.view radius:3];
+    // 传self.imageView, self.view 覆盖范围不一样
+    [WJEffectView addBlurEffectFilterToView:self.imageView radius:3];
+    // 或者
+//    [WJEffectView addBlurImageViewToView:self.imageView radius:3];
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        self.imageView.hidden = YES;
 //    });
 }
 - (IBAction)clearEffectClick:(id)sender {
-    [WJEffectView clearEffectForView:self.view];
+    // 传self.imageView, self.view 清除范围不一样
+    [WJEffectView clearEffectForView:self.imageView];
 }
 @end
