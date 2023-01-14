@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		A0DE90042970FD2500B316A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DE90032970FD2500B316A2 /* Assets.xcassets */; };
 		A0DE90072970FD2500B316A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DE90052970FD2500B316A2 /* LaunchScreen.storyboard */; };
 		A0DE900A2970FD2500B316A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE90092970FD2500B316A2 /* main.m */; };
+		A0DE90152970FD6D00B316A2 /* WJEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE90132970FD6D00B316A2 /* WJEffectView.m */; };
+		A0DE90162970FD6D00B316A2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE90142970FD6D00B316A2 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		A0DE90062970FD2500B316A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0DE90082970FD2500B316A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DE90092970FD2500B316A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0DE90112970FD6D00B316A2 /* WJEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEffectView.h; sourceTree = "<group>"; };
+		A0DE90122970FD6D00B316A2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		A0DE90132970FD6D00B316A2 /* WJEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJEffectView.m; sourceTree = "<group>"; };
+		A0DE90142970FD6D00B316A2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +51,8 @@
 		A0DE8FEB2970FD2400B316A2 = {
 			isa = PBXGroup;
 			children = (
-				A0DE8FF62970FD2400B316A2 /* WJEffectView */,
+				A0DE90102970FD6D00B316A2 /* WJEffectView */,
+				A0DE8FF62970FD2400B316A2 /* Classes */,
 				A0DE8FF52970FD2400B316A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0DE8FF62970FD2400B316A2 /* WJEffectView */ = {
+		A0DE8FF62970FD2400B316A2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				A0DE8FF72970FD2400B316A2 /* AppDelegate.h */,
@@ -72,6 +79,17 @@
 				A0DE90052970FD2500B316A2 /* LaunchScreen.storyboard */,
 				A0DE90082970FD2500B316A2 /* Info.plist */,
 				A0DE90092970FD2500B316A2 /* main.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A0DE90102970FD6D00B316A2 /* WJEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE90112970FD6D00B316A2 /* WJEffectView.h */,
+				A0DE90132970FD6D00B316A2 /* WJEffectView.m */,
+				A0DE90122970FD6D00B316A2 /* UIImage+ImageEffects.h */,
+				A0DE90142970FD6D00B316A2 /* UIImage+ImageEffects.m */,
 			);
 			path = WJEffectView;
 			sourceTree = "<group>";
@@ -111,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = A0DE8FEF2970FD2400B316A2 /* Build configuration list for PBXProject "WJEffectView" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -148,7 +166,9 @@
 			files = (
 				A0DE8FFF2970FD2400B316A2 /* ViewController.m in Sources */,
 				A0DE8FF92970FD2400B316A2 /* AppDelegate.m in Sources */,
+				A0DE90162970FD6D00B316A2 /* UIImage+ImageEffects.m in Sources */,
 				A0DE900A2970FD2500B316A2 /* main.m in Sources */,
+				A0DE90152970FD6D00B316A2 /* WJEffectView.m in Sources */,
 				A0DE8FFC2970FD2400B316A2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Classes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -277,6 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Classes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -293,7 +315,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WJEffectView/Info.plist;
+				INFOPLIST_FILE = Classes/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +342,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WJEffectView/Info.plist;
+				INFOPLIST_FILE = Classes/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
