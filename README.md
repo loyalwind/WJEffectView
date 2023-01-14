@@ -2,7 +2,7 @@
 色调特效，黑白特殊，高斯模糊
 
 ```objective-c
-// 添加色调特效
+// 添加自定义色调特效
 [WJEffectView addEffectViewToView:self.imageView tintColor:[UIColor colorWithWhite:0.11 alpha:0.73]];
 ```
 
@@ -27,8 +27,11 @@
 高斯模糊
 <img src="images/高斯模糊.png" style="zoom:50%;" />
 
-黑白效果
+黑白色调效果
 <img src="images/黑白效果.png" style="zoom:50%;" />
+
+自定义色调效果
+<img src="images/自定义色调.png" style="zoom:50%;" />
 
 
 
