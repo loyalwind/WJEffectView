@@ -21,13 +21,14 @@
 [WJEffectView clearEffectForView:self.imageView];
 ```
 
+无特效
+<img src="images/无特效.png" style="zoom:50%;" />
 
-无特效		高斯模糊   	黑白效果
-<img src="images/无特效.png" style="zoom:30%;" /> 
+高斯模糊
+<img src="images/高斯模糊.png" style="zoom:50%;" />
 
-<img src="images/高斯模糊.png" style="zoom:30%;" /> 
-
-<img src="images/黑白效果.png" style="zoom:30%;" />
+黑白效果
+<img src="images/黑白效果.png" style="zoom:50%;" />
 
 
 
